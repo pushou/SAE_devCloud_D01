@@ -1,4 +1,6 @@
-# SAE DevCloud_d01 2023
+# SAé DevCloud_4D01 Développer et déployer un microservice dans un environnement virtualisé
+
+
 
 Vous venez de réussir le concours d'assistant d'ingénieur (bac +2) dans l'éducation nationale et vous venez d'être nommé dans un IUT du sud de la France celui de "Cette".
 Cet IUT vient d'ouvrir et donc tout est à mettre à place.
@@ -41,3 +43,19 @@ Vous utiliserez obligatoirement plusieurs solutions de containairisation avec au
 
 Le Jeudi 15 Juin le matin aura lieu à une présentation de votre installation au directeur. Un bilan chiffré du travail de chacun y sera présenté.
 Un compte-rendu écrit et un repos git sont obligatoires.
+
+
+## Critères d'évaluation de la SAE:
+
+### Critères groupes:
+
+- Conformité au CCTP.
+- Haute disponibilité de l'infrastructure.
+- Sécurité de l'infrastructure.
+- Organisation.
+
+### Critères individualisables:
+
+- Communication.
+- Quantité de travail.
+- Evaluation par les pairs.
