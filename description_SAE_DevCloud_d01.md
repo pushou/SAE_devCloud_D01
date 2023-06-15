@@ -1,4 +1,4 @@
-# SAé DevCloud_4D01 Développer et déployer un microservice dans un environnement virtualisé
+# SAé DevCloud_4D01: Développer et déployer un microservice dans un environnement virtualisé
 
 
 
@@ -8,7 +8,7 @@ Le directeur de l'IUT (Mr Pouchou) vous demande d'implémenter tous les services
 
 Vous travaillerez au sein d'une équipe de 4 personnes imposée par le directeur de l'IUT.
 Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final chaque tâche sera documentée et affectée à une personne ce qui permettra d'évaluer le travail de votre équipe et l'individualisation de votre rémunération.
-Le directeur fra au moins un point intermédiaire.
+Le directeur fera au moins un point intermédiaire.
 
 Vous devez donc implémenter à minima les services réseaux suivants:
 
@@ -41,18 +41,20 @@ Le choix de la solution de virtualisation est de votre ressort ainsi que l'hébe
 Vous utiliserez obligatoirement plusieurs solutions de containairisation avec au moins un service Docker, Podman, et Lxc. Un durcissement des containers est souhaité.(rootlesss, limits..). Pour Docker l'utilisation de fichier compose est fortement recommandé.
 
 
-Le Jeudi 15 Juin le matin aura lieu à une présentation de votre installation au directeur. Un bilan chiffré du travail de chacun y sera présenté.
+Au final aura lieu à une présentation de votre installation au directeur. Un bilan chiffré du travail de chacun y sera présenté.
 Un compte-rendu écrit et un repos git sont obligatoires.
 
 
 ## Critères d'évaluation de la SAE:
 
-### Critères groupes:
+### Critères pour le groupe:
 
 - Conformité au CCTP.
 - Haute disponibilité de l'infrastructure.
 - Sécurité de l'infrastructure.
 - Organisation.
+- Ecrits.
+- Esprit et outils DevOps
 
 ### Critères individualisables:
 
