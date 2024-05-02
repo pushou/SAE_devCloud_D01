@@ -12,12 +12,12 @@ Le directeur fera au moins un point intermédiaire.
 
 Vous devez donc implémenter à minima les services réseaux suivants:
 
-- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia). Vous connecterez vos containers à ce réseau. 
+- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia). Vous connecterez vos containers à ce réseau via un bridge.
 - Un DNS (unbound).
 - Un dhcp.
 - Un serveur FTP.
 - Au moins un client Windows connecté à un contrôleur de domaine Samba 3 ou 4.
-- Un service Netbox (https://github.com/netbox-community/netbox-docker) alimenté par vos soins.
+- Un service Netbox (https://github.com/netbox-community/netbox-docker) alimenté par vos soins et de façon automatisé.
 - Une solution permettant de gérer les containers de façon centralisé (A l'exclusion d'un orchestrateur de container comme kubernetes) comme Portainer.
 
 
