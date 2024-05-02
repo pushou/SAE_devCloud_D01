@@ -13,14 +13,11 @@ Le directeur fera au moins un point intermédiaire.
 Vous devez donc implémenter à minima les services réseaux suivants:
 
 - Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia). Vous connecterez vos containers à ce réseau. 
-- Un DNS en haute disponibilité (via IPVS).
-  - Un DNS  (bind9). (qui sera dans le cloud)
-  - Un DNS (unbound).
-
+- Un DNS (unbound).
 - Un dhcp.
 - Un serveur FTP.
 - Au moins un client Windows connecté à un contrôleur de domaine Samba 3 ou 4.
-- Un service Netbox alimenté par vos soins.
+- Un service Netbox (https://github.com/netbox-community/netbox-docker) alimenté par vos soins.
 - Une solution permettant de gérer les containers de façon centralisé (A l'exclusion d'un orchestrateur de container comme kubernetes) comme Portainer.
 
 
@@ -35,8 +32,8 @@ et les services applicatifs containairisés suivants à destination des usagers:
   
 
 Un stockage partagé NFS permettra de survivre à l'arrêt d'un serveur pour les containers redondés.
-Le choix de la solution de virtualisation est de votre ressort ainsi que l'hébergeur Cloud pour le DNS.
-Vous utiliserez obligatoirement plusieurs solutions de containairisation avec au moins un service Docker, Podman, et Lxc. Un durcissement des containers est souhaité.(rootlesss, limits..). Pour Docker l'utilisation de fichier compose est fortement recommandé.
+Le choix de la solution de virtualisation est de votre ressort.
+Un durcissement des containers est souhaité.(rootlesss, limits..). Pour Docker l'utilisation de fichier compose est fortement recommandé.https://github.com/netbox-community/netbox-docker
 
 
 Au final aura lieu à une présentation de votre installation au directeur. Un bilan chiffré du travail de chacun y sera présenté.
