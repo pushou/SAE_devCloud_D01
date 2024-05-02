@@ -12,7 +12,7 @@ Le directeur fera au moins un point intermédiaire.
 
 Vous devez donc implémenter à minima les services réseaux suivants:
 
-- Un réseau bgp et ospf. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia) et sera composé de "leaf & spines". 
+- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia). Vous connecterez vos containers à ce réseau. 
 - Un DNS en haute disponibilité (via IPVS).
   - Un DNS  (bind9). (qui sera dans le cloud)
   - Un DNS (unbound).
@@ -20,9 +20,7 @@ Vous devez donc implémenter à minima les services réseaux suivants:
 - Un dhcp.
 - Un serveur FTP.
 - Au moins un client Windows connecté à un contrôleur de domaine Samba 3 ou 4.
-- Un service Netbox rempli par vos soins.
-
-- Un firewall (pfsense)
+- Un service Netbox alimenté par vos soins.
 - Une solution permettant de gérer les containers de façon centralisé (A l'exclusion d'un orchestrateur de container comme kubernetes) comme Portainer.
 
 
@@ -31,7 +29,6 @@ et les services applicatifs containairisés suivants à destination des usagers:
 - Un serveur Gitlab qui vous servira de stockage de vos configurations.
 - Un serveur web IUT à base d'un "Content" Management System" comme celui de l'IUT de Béziers. HA proxy assurera l'équilibrage de charge et la haute disponibilité.
   Vous testerez en charge cette solution.
-- Un serveur de note Scodoc obligatoirement containérisé.
 - Un serveur Nextcloud.
 - Un serveur Samba. (le client Windows l'utilisera).
 - Un Kanban de votre choix internalisé ou externalisé.
