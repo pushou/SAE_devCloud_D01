@@ -6,20 +6,15 @@ Vous venez de réussir le concours d'assistant d'ingénieur (bac +2) dans l'édu
 Cet IUT vient d'ouvrir et donc tout est à mettre à place.
 Le directeur de l'IUT (Mr Pouchou) vous demande d'implémenter tous les services possibles de l'IUT sous forme **containairisée** majoritairement (l'usage d'une VM pour un service est possible, mais l'installation du logiciel de la VM devra se faire via Ansible), en haute disponibilité pour certains services et si possible avec de l'équilibrage de charge. 
 
-Vous travaillerez au sein d'une équipe de 2 personnes.
+Vous travaillerez au sein d'une équipe de 2 personnes et vous disposerez d'un serveur DELL/HP pour travailler.
 Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final chaque tâche sera documentée et affectée à une personne ce qui permettra d'évaluer le travail de votre équipe et l'individualisation de votre rémunération.
 Le directeur fera au moins un point intermédiaire.
 
 Vous devez donc implémenter à minima les services réseaux suivants:
 
-- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs (arista/frr-routing/Nokia). Vous connecterez vos containers à ce réseau via un bridge.
-- Un DNS (unbound) en haute disponibilité.
+- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs: arista et frr-routing. 
+- Un DNS (unbound) en haute disponibilité derrière un équilibreur de charge.
 - Un dhcp.
-- Un serveur FTP.
-- Au moins un client Windows connecté à un contrôleur de domaine Samba 3 ou 4.
-- Un service Netbox (https://github.com/netbox-community/netbox-docker) alimenté par vos soins et de façon automatisé.
-- Une solution permettant de gérer les containers de façon centralisé (A l'exclusion d'un orchestrateur de container comme kubernetes) comme Portainer.
-
 
 et les services applicatifs containairisés suivants à destination des usagers:
 
@@ -28,7 +23,7 @@ et les services applicatifs containairisés suivants à destination des usagers:
   Vous testerez en charge cette solution.
 - Un serveur Nextcloud.
 - Un serveur Samba. (le client Windows l'utilisera).
-- Un Kanban de votre choix internalisé ou externalisé.
+- Un Kanban de votre choix.
   
 
 
@@ -46,6 +41,7 @@ Un compte-rendu écrit et un repos git sont obligatoires.
 ### Critères pour le groupe:
 
 - Conformité au CCTP.
+- Clarté des schémas réseaux.
 - Haute disponibilité de l'infrastructure.
 - Sécurité de l'infrastructure.
 - Organisation.
