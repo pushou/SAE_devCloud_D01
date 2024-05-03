@@ -6,7 +6,7 @@ Vous venez de réussir le concours d'assistant d'ingénieur (bac +2) dans l'édu
 Cet IUT vient d'ouvrir et donc tout est à mettre à place.
 Le directeur de l'IUT (Mr Pouchou) vous demande d'implémenter tous les services possibles de l'IUT sous forme **containairisée** majoritairement (l'usage d'une VM pour un service est possible, mais l'installation du logiciel de la VM devra se faire via Ansible), en haute disponibilité pour certains services et si possible avec de l'équilibrage de charge. 
 
-Vous travaillerez au sein d'une équipe de 2 personnes et vous disposerez d'un serveur DELL/HP pour travailler.
+Vous travaillerez au sein d'une équipe de 2 personnes et vous disposerez d'un serveur DELL/HP pour travailler. Vous validerez mutuellement vos travaux avec une autre équipe. (routage acccès). C'est une tâche qui donnera lieu à compte rendu.
 Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final chaque tâche sera documentée et affectée à une personne ce qui permettra d'évaluer le travail de votre équipe et l'individualisation de votre rémunération.
 Le directeur fera au moins un point intermédiaire.
 
@@ -14,13 +14,12 @@ Vous devez donc implémenter à minima les services réseaux suivants:
 
 - Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs: arista et frr-routing. 
 - Un DNS (unbound) en haute disponibilité derrière un équilibreur de charge.
-- Un dhcp.
 
 et les services applicatifs containairisés suivants à destination des usagers:
 
 - Un serveur Gitlab qui vous servira de stockage de vos configurations.
+- Un registry Harbor.
 - Un serveur web IUT à base d'un "Content" Management System" comme celui de l'IUT de Béziers. HA proxy assurera l'équilibrage de charge et la haute disponibilité.
-  Vous testerez en charge cette solution.
 - Un serveur Nextcloud.
 - Un serveur Samba. (le client Windows l'utilisera).
 - Un Kanban de votre choix.
