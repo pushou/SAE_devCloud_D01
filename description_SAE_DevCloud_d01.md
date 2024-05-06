@@ -15,14 +15,15 @@ Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final ch
 
 - Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs containérisés : arista et frr-routing.
 - Un infrastructure virtualisée avec une solution de votre choix. Vous disposez d'un serveur pour deux personnes. Un stockage partagé NFS permettra de survivre à l'arrêt d'un serveur pour les containers redondés.
-
+- Votre infrastructure sera acessible via un vpn Wireguard (firezone..) et vous mettrez en place un bastion ssh (téléport...).
 
 ### Vous devez donc implémenter à minima les services réseaux suivants:
 
 - Un DNS (unbound) en haute disponibilité derrière un équilibreur de charge.
 - Un système de supervision de vos réseaux et de vos microservices.
-- Une source de vérité (nautobot) commune à deux groupes.
-- Un équilibreur de charge de type haproxy pour la haute disponibilité.
+- Une source de vérité (nautobot) commune à tous les groupes.
+- Un équilibreur de charge de type haproxy pour la haute disponibilité commun à tous les groupes.
+  
   
 
 ### Services applicatifs cloud containairisés suivants à destination des usagers:
@@ -32,14 +33,10 @@ Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final ch
 - Un serveur web IUT à base d'un "Content" Management System" comme celui de l'IUT de Béziers. HA proxy assurera l'équilibrage de charge et la haute disponibilité.
 - Un serveur Nextcloud.
 - Un Kanban de votre choix. (wekan...) qui vous servira à suivre le projet.
+- Les containers seront déployables à l'aide de playbook ansible.
 
-  Une solution de management (Portainer,rancher) devra être utilisé pour piloter vos containers.
-  
-
-
-
+Une solution de management (Portainer,rancher) devra être utilisé pour piloter vos containers.
 Un durcissement des containers est souhaité ( limits, rootless..). 
-Pour vos containers Docker l'utilisation de fichiers compose est demandé.
 
 Un compte-rendu écrit et un repos git par groupe sont obligatoires.
 
