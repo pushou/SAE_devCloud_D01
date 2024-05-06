@@ -12,8 +12,11 @@ Le directeur fera au moins un point intermédiaire.
 
 Vous devez donc implémenter à minima les services réseaux suivants:
 
-- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs: arista et frr-routing. 
+- Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs: arista et frr-routing. Vous pourrez utiliser Ansible pour configurer ces routeurs et les inventoriez.
 - Un DNS (unbound) en haute disponibilité derrière un équilibreur de charge.
+- Un système de supervision de vos réseaux et de vos microservices.
+- Une source de vérité (nautobot)
+  
 
 et les services applicatifs containairisés suivants à destination des usagers:
 
@@ -21,7 +24,6 @@ et les services applicatifs containairisés suivants à destination des usagers:
 - Un registry Harbor.
 - Un serveur web IUT à base d'un "Content" Management System" comme celui de l'IUT de Béziers. HA proxy assurera l'équilibrage de charge et la haute disponibilité.
 - Un serveur Nextcloud.
-- Un serveur Samba. (le client Windows l'utilisera).
 - Un Kanban de votre choix.
   
 
