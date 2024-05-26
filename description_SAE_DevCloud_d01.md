@@ -20,16 +20,16 @@ Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final ch
 ### Vous devez donc implémenter à minima les services réseaux suivants:
 
 - Un DNS (unbound) en haute disponibilité derrière un équilibreur de charge.
+- Un registry de service Consul (https://www.consul.io/)
+- Un registry Harbor.
 - Un système de supervision de vos réseaux et de vos microservices.
 - Une source de vérité (nautobot) commune à tous les groupes.
-- Un équilibreur de charge de type haproxy pour la haute disponibilité commun à tous les groupes.
+- Un équilibreur de charge de type haproxy (avec consul template) pour la haute disponibilité commun à tous les groupes.
   
   
 
 ### Services applicatifs cloud containairisés suivants à destination des usagers:
 
-- Un serveur Gitlab qui vous servira de stockage de vos configurations.
-- Un registry Harbor.
 - Un serveur web IUT à base d'un "Content" Management System" comme celui de l'IUT de Béziers. HA proxy assurera l'équilibrage de charge et la haute disponibilité.
 - Un serveur Nextcloud.
 - Un Kanban de votre choix. (wekan...) qui vous servira à suivre le projet.
