@@ -14,7 +14,7 @@ Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final ch
 ### réseau
 
 - Un réseau bgp pour vous connecter aux autres équipes et un réseau ospf interne qui permettra d'accéder à vos microservices. Ce réseau de routeurs containairisés sera implémenté à l'aide containerlab (https://containerlab.dev/). Il sera composé de deux types de routeurs containérisés : arista et frr-routing.
-- Un infrastructure virtualisée avec la solution Cloud OpenNebula (https://opennebula.io/). Vous disposez d'un serveur pour deux personnes. Un stockage partagé NFS permettra de survivre à l'arrêt d'un serveur pour les containers redondés.
+- Un infrastructure virtualisée avec la solution Cloud OpenNebula (https://opennebula.io/). Vous disposez d'un serveur pour deux personnes. Un stockage partagé NFS permettra de survivre à l'arrêt d'un serveur pour les containers redondés. Les serveurs dans l'idéal seront sur le même plan d'adressage mais reliés à l'aide du protocole vxlan ou genève.(ethernet dans udp)
 - Votre infrastructure sera acessible via un vpn Wireguard (firezone..) et vous mettrez en place un bastion ssh (téléport...).
 
 ### Vous devez donc implémenter à minima les services réseaux suivants:
@@ -37,6 +37,8 @@ Vous devez travailler en mode agile en utilisant la méthode Kanban. Au final ch
 
 Une solution de management (Portainer,rancher) devra être utilisé pour piloter vos containers.
 Un durcissement des containers est souhaité ( limits, rootless..). 
+
+Vous devrez aussi réaliser de l'automatisation par script ( Python, Ansible) par exemple pour alimenter Nautobot ou Consul ou produire des états.
 
 Un compte-rendu écrit et un repos git par groupe sont obligatoires.
 
