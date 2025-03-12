@@ -21,6 +21,7 @@ Vous implémenterez un VPN Wireguard entre deux data-center partenaires.
 
 Afin de garantir la disponibilité des services vos mettrez en place sur le réseau de management un serveur de monitoring classique pour les services webs.
 Vous implémenterez aussi une stack d'observabilité pour les routeurs.(gnmic, sflow, prometheus, grafana... au choix). 
+Vos configurations seront sauvegardées par oxydyse et vous les stockerez dans un repo git.
 
 ## tests à réaliser et à faire valider par le BPB:
 
