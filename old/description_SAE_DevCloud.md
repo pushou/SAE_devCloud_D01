@@ -38,7 +38,7 @@ Chaque groupe devra mettre à jour Netbox avec ses équipements et son architect
 ## Critères d'évaluation de la SAE:
 
 - Conformité du résultat au CCTP.
-- Rapport final **sans contenus** issus d'un LLM. Un bilan du travail de chacun sera présent sous forme de camemberts (Chaque tâche doit être précisée (Qui ? Quoi ? durées ? résultats...))
+- Rapport final **sans contenus** issus d'un LLM (Sinon donnera des points aux LLM pas à votre groupe). Un bilan du travail de chacun sera présent sous forme de camemberts (Chaque tâche doit être précisée (Qui ? Quoi ? durées ? résultats...))
 - Vos configurations et le rapport seront sauvegardées dans un repo git fourni par le BBP.
 - Explication claire sur les technologies utilisées et les choix faits.
 - Qualité de la stack d'observabilité/monitoring.
