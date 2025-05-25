@@ -1,11 +1,11 @@
 # SAé DevCloud_4D01: Développer et déployer un microservice dans un environnement virtualisé
 
 Vous êtes une société d’hébergement cloud et vous disposez d'un data-center. 
-Votre société est composée de deux personnes. Un représentant de votre investisseur: le  BBP (Big Boss Pouchou) validera votre travail de façon régulière afin d'éviter l'effet tunnel.
-Vous et votre associé avez décidé de mettre en place un environnement de type "leaf & spine" dans votre data-center.
+Votre société est composée de trois personnes. Un représentant de votre investisseur: le  BBP (Big Boss Pouchou) validera votre travail de façon régulière afin d'éviter l'effet tunnel.
+Vous et vos associés avez décidé de mettre en place un environnement de type "leaf & spine" dans votre data-center.
 Pour votre méthodologie de projets vous vous appuierez sur la méthode Kanban. Avant de commencer, vous ferez valider les phases majeures de votre projet par le BBP 
 
-Votre job est de réaliser une maquette de votre architecture réseau à l'aide de Netlab et de Container lab et deux boitiers physiques (1 catalyst 8000 et un routeur Mikrotik ). 
+Votre job est de réaliser une maquette de votre architecture réseau à l'aide de Netlab et de Container lab et deux boîtiers physiques (1 catalyst 8000 et 1 routeur Mikrotik ). 
 
 Vous vous appuierez sur des routeurs "containairisés" pour la stack "leaf & spine" et sur le boitier virtualisé "Catalyst" et un Mikrotik pour la partie interconnexion entre les datacenters.
 Cette architecture L&S est composée de deux couches de switchs. Les switchs de la couche "leaf" sont connectés à tous les switchs de la couche "spine".
@@ -14,7 +14,7 @@ Les containers web et dns sont connectés aux leafs.
 Dans le cadre de partenariats vous devez pourvoir vous connecter à d'autres data-center de vos partenaires (autres groupes d'étudiants) qui ont la même architecture.
 Les routes doivent être visibles de chacun de vos routeurs. BGP doit être utilisé pour l'échange de routes entre les sociétés.
 
-Sur les leafs seront connectés des services web (server samba ou AD) et dns (unbound) qui devront être accessibles depuis le réseau 10.202.0.0/16.
+Sur les leafs seront connectés des services web (server samba ou AD - répliqué) et dns (unbound) qui devront être accessibles depuis le réseau 10.202.0.0/16.
 Chaque partenaire pourra se connecter aura un accès aux services web et  DNS de l'autre partenaire.
 
 Vous implémenterez un VPN Wireguard entre deux data-center partenaires.
@@ -38,8 +38,7 @@ Chaque groupe devra mettre à jour Netbox avec ses équipements et son architect
 ## Critères d'évaluation de la SAE:
 
 - Conformité du résultat au CCTP.
-
-- Rapport final sans contenus issus d'un LLM. Un bilan du travail de chacun sera présent sous forme de camemberts (Chaque tâche doit être précisée (Qui ? Quoi ? durées ? résultats...))
+- Rapport final **sans contenus** issus d'un LLM. Un bilan du travail de chacun sera présent sous forme de camemberts (Chaque tâche doit être précisée (Qui ? Quoi ? durées ? résultats...))
 - Vos configurations et le rapport seront sauvegardées dans un repo git fourni par le BBP.
 - Explication claire sur les technologies utilisées et les choix faits.
 - Qualité de la stack d'observabilité/monitoring.
