@@ -7,7 +7,7 @@ Pour votre méthodologie de projets vous vous appuierez sur la méthode Kanban. 
 
 Votre job est de réaliser une maquette de votre architecture réseau à l'aide de Netlab et de Container lab et deux boitiers physiques (1 catalyst 8000 et un routeur Mikrotik ). 
 
-Vous vous appuierez sur des routeurs "containairisés" pour la stack "leaf & spine" et sur le boitier virtualisé "Catalyst" pour la partie interconnexion entre les datacenters.
+Vous vous appuierez sur des routeurs "containairisés" pour la stack "leaf & spine" et sur le boitier virtualisé "Catalyst" et un Mikrotik pour la partie interconnexion entre les datacenters.
 Cette architecture L&S est composée de deux couches de switchs. Les switchs de la couche "leaf" sont connectés à tous les switchs de la couche "spine".
 Les containers web et dns sont connectés aux leafs.
 
