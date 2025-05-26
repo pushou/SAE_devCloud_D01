@@ -37,7 +37,7 @@ Chaque groupe devra mettre à jour Nautobot avec ses équipements et son archite
 
 ## Critères d'évaluation de la SAE:
 
-- Conformité du résultat au CCTP. (faire valider au fil de l'eau par le BBP sur les jalons majeurs: Plan de charges (Kanban personnalisé),S&L, sauvegardes,Serveurs de fichiers, BGP intergroupes, Nautobot, VPN, stack de télémétrie, interconnexion avec les autres groupes, tests de charges etc.)
+- Conformité du résultat au CCTP. (faire valider au fil de l'eau par le BBP sur les jalons majeurs: Plan de charges (Kanban personnalisé),S&L, sauvegardes,Serveurs de fichiers, BGP intergroupes, Nautobot, VPN, stack de télémétrie, interconnexion avec les autres groupes, tests de charges, qualité et nombre de services containairisés etc.)
 - Rapport final synthétique (1 fiche = 1action))**sans contenus** issus d'un LLM (Sinon je BBP donnera des points aux LLM pas à votre groupe). Un bilan du travail de chacun sera présent sous forme de camemberts (Chaque tâche doit être précisée (Qui ? Quoi ? Commits ? durées ? résultats...))
 - Vos configurations et le rapport seront sauvegardées dans un repo git fourni par le BBP.
 - Explication claire sur les technologies utilisées et les choix faits.
