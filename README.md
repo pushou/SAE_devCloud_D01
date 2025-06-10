@@ -1,5 +1,8 @@
 # SAé DevCloud_4D01: Développer et déployer un microservice dans un environnement virtualisé
 
+<img title="schéma réseaux de la SAE" alt="Alt text" src="./schemaSAE.png">
+
+
 Vous êtes une société d’hébergement cloud et vous disposez d'un data-center. 
 Votre société est composée de deux ou trois personnes. Un représentant de votre investisseur : le  BBP (Big Boss Pouchou) validera votre travail de façon régulière afin d'éviter l'effet tunnel.
 Vous et vos associés avez décidé de mettre en place un environnement de type "leaf & spine" dans votre datacenter.
